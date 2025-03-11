@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <style>
+      sem-ele {
+        display: block;
+        border: 1px solid black;
+        text-align: center;
+        background-color: rgb(246, 233, 91);
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <div class="header-title">
+        <h1>About Me</h1>
+      </div>
+
+      <nav>
+        <div class="nav-links">
+          <a href="home.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="projects.html">Projects</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </nav>
+
+      <div class="search-box">
+        <form role="search">
+          <input
+            id="query"
+            name="query"
+            type="search"
+            placeholder="Search my site..."
+          />
+          <button type="submit">Go!</button>
+        </form>
+      </div>
+    </header>
+
+    <main>
+      <section>
+        <h2>Personal Information</h2>
+        <div class="personal-info-container">
+          <div class="personal-img">
+            <figure>
+              <img src="assets/profile4.jpg" alt="Jou-Chih Chang" width="150"/>
+              <figcaption style="text-align: center">Jou-Chih Chang</figcaption>
+            </figure>
+          </div>
+
+          <div class="personal-info">
+            <address>
+              <sem-ele>
+                <p>Phone:<br /><a href="tel:+19516661557">951-666-1557</a></p>
+                <p>
+                  School Email:<br /><a href="mailto:joc044@ucsd.edu">joc044@ucsd.edu</a>
+                </p>
+                <p>
+                  Personal Email:<br /><a href="mailto:irisis1123@gmail.com">irisis1123@gmail.com</a>
+                </p>
+              </sem-ele>
+            </address>
+          </div>
+        </div>
+      </section>
+
+      <hr />
+
+      <section>
+        <h2>Work Experience</h2>
+        <article>
+          <h3>
+            <b
+              >SUN GOLD CHANCE CO., LTD., Taichung City,
+              <abbr title="Taiwan">TW</abbr></b
+            >
+          </h3>
+          <p><strong>July 2018 - June 2019</strong> | <b>Secretary</b></p>
+          <ul>
+            <li>
+              Handled <em>incoming and outgoing calls</em>, emails, and other
+              correspondence.
+            </li>
+            <li>
+              Demonstrated<em>
+                strong organizational and communication skills</em
+              >
+              in daily tasks.
+            </li>
+            <li>
+              Assisted with the preparation of
+              <em>presentations and reports</em> for customers.
+            </li>
+            <li>
+              Managed the <em>reception area</em>, greeting visitors and
+              directing them to the appropriate personnel.
+            </li>
+            <li>
+              Helped coordinate <em>events and business trip arrangements</em>.
+            </li>
+          </ul>
+        </article>
+      </section>
+
+      <hr />
+
+      <section>
+        <h2>Education</h2>
+        <table>
+          <caption>
+            Academic Background
+          </caption>
+          <thead>
+            <tr>
+              <th>Institution</th>
+              <th>Degree</th>
+              <th>Year</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>UC San Diego</td>
+              <td>
+                <dfn title="Bachelor's Degree in Computer Science"
+                  >B.S. in CS</dfn
+                >
+              </td>
+              <td>2022 - Present</td>
+            </tr>
+            <tr>
+              <td>Riverside Community College</td>
+              <td>Associate's Degree</td>
+              <td>2019 - 2022</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <hr />
+
+      <section>
+        <h2>Skills</h2>
+        <dl>
+          <dt>Programming Languages</dt>
+          <dd>Java, Python, C++, HTML, CSS</dd>
+          <dt>Spoken Languages</dt>
+          <dd>English, Mandarin, Japanese, Taiwanese</dd>
+        </dl>
+      </section>
+    </main>
+
+    <hr />
+
+    <footer>
+      <div class="socials">
+        <p class="footer-text">@socialmediaplatform</p>
+        <div class="social-icons">
+          <a href="https://www.instagram.com/iiiiiirrrrrriiiiiissssss/">
+            <picture>
+              <source srcset="assets/instagram.webp" type="image/webp" width="30" height="30" loading="lazy">
+              <img src="assets/instagram.png" alt="Instagram logo linking to Jou-Chih Chang's profile" width="30" height="30" loading="lazy">
+            </picture>
+          </a>
+          <a href="https://www.linkedin.com/in/jou-chih-chang-185962296/">
+            <picture>
+              <source srcset="assets/linkedin.webp" type="image/webp" width="30" height="30" loading="lazy">
+              <img src="assets/linkedin.png" alt="LinkedIn logo linking to Jou-Chih Chang's profile" width="30" height="30" loading="lazy">
+            </picture>
+          </a>
+        </div>
+      </div>
+      <iframe
+        src="https://www.youtube-nocookie.com/embed/7jY-3woeWHs?playlist=7jY-3woeWHs&start=6"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen
+      ></iframe>
+      <p class="copyright">&copy; <del>2024</del> <ins>2025</ins> By Jou-Chih Chang</p>
+      <button id="theme-toggle" aria-label="Toggle Theme">
+        <span id="theme-icon">Dark Mode</span>
+      </button>
+      <noscript>
+        <p>JavaScript is disabled. Some features may not work correctly.</p>
+      </noscript>
+    </footer>
+    <script src="assets/scripts/theme.js"></script>
+  </body>
+</html>

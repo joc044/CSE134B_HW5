@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jou-Chih Chang's Projects</title>
+    <link rel="stylesheet" href="assets/style.css">
+  </head>
+
+  <body>
+    <header>
+      <div class="header-title">
+        <h1>Projects</h1>
+      </div>
+
+      <nav>
+        <div class="nav-links">
+          <a href="home.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="projects.html">Projects</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </nav>
+
+      <div class="search-box">
+        <form role="search">
+          <input id="query" name="query" type="search" placeholder="Search my site...">
+          <button type="submit">Go!</button>
+        </form>
+      </div>
+    </header>
+
+    <main>
+      <h2>Project Examples</h2>
+      <details>
+        <summary>Simple Python Script</summary>
+        <p>
+          To print a message in Python, use:
+          <code>print("Hello, World!")</code>
+        </p>
+      </details>
+
+      <hello-world></hello-world>
+
+      <script>
+        class HelloWorld extends HTMLElement {
+            constructor() {
+                super();
+                console.log("Hello world!");
+            }
+        }
+
+        customElements.define('hello-world', HelloWorld);
+      </script>
+
+      <details>
+        <summary>Python Function</summary>
+        <p>Define a function in Python:</p>
+        <pre>
+      def hello():
+          print("Hello, World!")
+          </pre
+        >
+      </details>
+
+      <dialog id="projectDialog">
+        <h2>Project Explanation</h2>
+        <p>Both examples are used to print "Hello, World!" in the terminal.</p>
+        <p>Using <kbd>Ctrl</kbd> + <kbd>C</kbd> to copy text in a terminal.</p>
+        <button onclick="document.getElementById('projectDialog').close();">
+          Close
+        </button>
+      </dialog>
+      <button onclick="document.getElementById('projectDialog').showModal();">
+        View More
+      </button>
+
+      <h2>Drawing</h2>
+      <div class="drawing-area">
+        <canvas id="Canvas">
+          Your browser does not support the canvas tag.
+        </canvas>
+
+        <script>
+          let canvas = document.getElementById("Canvas");
+          let ctx = canvas.getContext("2d");
+          ctx.fillStyle = "#FF5";
+          ctx.fillRect(0, 0, 200, 200);
+        </script>
+
+        <svg>
+          <circle cx="50" cy="50" r="40" stroke="blue" stroke-width="1" fill="red"/>
+        </svg>
+
+        <template id="draw">
+          <svg width="300" height="200">
+              <polygon points="100,10 40,198 190,78 10,78 160,198"
+              style="fill:yellow;"/>
+          </svg>
+        </template>
+      </div>
+      <div class="drawing-button">
+        <button onclick="showContent()">Draw</button>
+      </div>
+    </main>
+
+    <footer>
+      <div class="socials">
+        <p class="footer-text">@socialmediaplatform</p>
+        <div class="social-icons">
+          <a href="https://www.instagram.com/iiiiiirrrrrriiiiiissssss/">
+            <picture>
+              <source srcset="assets/instagram.webp" type="image/webp" width="30" height="30" loading="lazy">
+              <img src="assets/instagram.png" alt="Instagram logo linking to Jou-Chih Chang's profile" width="30" height="30" loading="lazy">
+            </picture>
+          </a>
+          <a href="https://www.linkedin.com/in/jou-chih-chang-185962296/">
+            <picture>
+              <source srcset="assets/linkedin.webp" type="image/webp" width="30" height="30" loading="lazy">
+              <img src="assets/linkedin.png" alt="LinkedIn logo linking to Jou-Chih Chang's profile" width="30" height="30" loading="lazy">
+            </picture>
+          </a>
+        </div>
+      </div>
+      <p class="copyright">&copy; <del>2024</del> <ins>2025</ins> By Jou-Chih Chang</p>
+      <button id="theme-toggle" aria-label="Toggle Theme">
+        <span id="theme-icon">Dark Mode</span>
+      </button>
+      <noscript>
+        <p>JavaScript is disabled. Some features may not work correctly.</p>
+      </noscript>
+    </footer>
+    <script src="assets/scripts/theme.js"></script>
+  </body>
+</html>

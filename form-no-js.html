@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form without JavaScript</title>
+    <link rel="stylesheet" href="assets/form-style.css">
+  </head>
+
+  <body>
+    <header>
+      <div class="header-title">
+        <h1>Contact Form</h1>
+      </div>
+    </header>
+
+    <main class="form">
+      <div class="contact-form">
+        <form action="https://httpbin.org/post" method="POST">
+          <fieldset>
+            <legend>Visitor Information</legend>
+
+            <label for="first-name">First Name*</label>
+            <input type="text" id="first-name" name="first-name" required pattern="[A-Za-z]+" title="Only letters allowed (A-Z, a-z)" minlength="1" maxlength="25">
+            
+            <label for="last-name">Last Name*</label>
+            <input type="text" id="last-name" name="last-name" required pattern="[A-Za-z]+" title="Only letters allowed (A-Z, a-z)" minlength="1" maxlength="25">
+            <label for="countryCode">Country Code</label>
+            <input
+              list="countryCodes"
+              id="countryCode"
+              name="countryCode"
+              placeholder="+1"
+              pattern="\+?[0-9]+"
+              title="Enter a valid country code (e.g., +1)">
+            <datalist id="countryCodes">
+              <option value="+1">United States/Canada</option>
+              <option value="+886">Taiwan</option>
+              <option value="+44">United Kingdom</option>
+              <option value="+91">India</option>
+              <option value="+33">France</option>
+              <option value="+49">Germany</option>
+              <option value="+81">Japan</option>
+              <option value="+61">Australia</option>
+              <option value="+55">Brazil</option>
+              <option value="+86">China</option>
+              <option value="+971">United Arab Emirates</option>
+            </datalist>
+
+            <label for="phoneNumber">Phone Number</label>
+            <input
+              type="tel"
+              id="phoneNumber"
+              name="phoneNumber"
+              placeholder="123-456-7890"
+              pattern="\d{3}[-.\s]?\d{3}[-.\s]?\d{4}" 
+              title="Enter a valid phone number (e.g., 123-456-7890)">
+
+            <label for="email">Email*</label>
+            <input type="email" id="email" name="email" required>
+          </fieldset>
+
+          <label for="inquiry">Inquiry Type:</label>
+          <select id="inquiry" name="inquiry">
+            <optgroup label="General">
+              <option value="question">General Question</option>
+              <option value="feedback">Feedback</option>
+            </optgroup>
+            <optgroup label="Work">
+              <option value="job">Job Opportunity</option>
+              <option value="collab">Collaboration</option>
+            </optgroup>
+          </select>
+
+          <label for="subject">Subject* (max 50 characters)</label>
+          <input type="text" id="subject" name="subject" required minlength="10" maxlength="50">
+
+          <label for="message">Message/Comment* (max 200 characters)</label>
+          <textarea id="message" name="message" rows="4" required minlength="10" maxlength="200"></textarea>
+
+          <input type="hidden" name="possible_bot" value="true">
+
+          <output class="errors"></output>
+          <output class="information"></output>
+
+          <div class="button-container">
+            <button type="submit">Submit</button>
+          </div>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>
