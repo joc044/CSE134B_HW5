@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Jou-Chih Chang's Contact Information">
     <title>Jou-Chih Chang's Contact</title>
     <link rel="stylesheet" href="assets/style.css">
   </head>
@@ -13,19 +14,19 @@
         <h1>Contact Information</h1>
       </div>
 
-      <nav>
+      <nav aria-label="Main Navigation">
         <div class="nav-links">
           <a href="home.html">Home</a>
           <a href="about.html">About</a>
           <a href="projects.html">Projects</a>
-          <a href="contact.html">Contact</a>
+          <a href="contact.html" aria-current="page">Contact</a>
         </div>
       </nav>
 
       <div class="search-box">
-        <form role="search">
-          <input id="query" name="query" type="search" placeholder="Search my site...">
-          <button type="submit">Go!</button>
+        <form role="search" id="search-form">
+          <input id="query" name="query" type="search" placeholder="Search my site..." aria-label="Search my site">
+          <button type="submit" aria-label="Submit Search">Go!</button>
         </form>
       </div>
     </header>
@@ -138,17 +139,11 @@
       <div class="socials">
         <p class="footer-text">@socialmediaplatform</p>
         <div class="social-icons">
-          <a href="https://www.instagram.com/iiiiiirrrrrriiiiiissssss/">
-            <picture>
-              <source srcset="assets/instagram.webp" type="image/webp" width="30" height="30" loading="lazy">
-              <img src="assets/instagram.png" alt="Instagram logo linking to Jou-Chih Chang's profile" width="30" height="30" loading="lazy">
-            </picture>
+          <a href="https://www.instagram.com/iiiiiirrrrrriiiiiissssss/" aria-label="Instagram Profile">
+            <img src="assets/instagram.png" alt="Instagram logo linking to Jou-Chih Chang's profile" width="30" height="30" loading="lazy">
           </a>
-          <a href="https://www.linkedin.com/in/jou-chih-chang-185962296/">
-            <picture>
-              <source srcset="assets/linkedin.webp" type="image/webp" width="30" height="30" loading="lazy">
-              <img src="assets/linkedin.png" alt="LinkedIn logo linking to Jou-Chih Chang's profile" width="30" height="30" loading="lazy">
-            </picture>
+          <a href="https://www.linkedin.com/in/jou-chih-chang-185962296/" aria-label="LinkedIn Profile">
+            <img src="assets/linkedin.png" alt="LinkedIn logo linking to Jou-Chih Chang's profile" width="30" height="30" loading="lazy">
           </a>
         </div>
       </div>
