@@ -329,6 +329,12 @@ input:placeholder-shown {
     }
 }
 
+.project-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 @media (max-width: 1024px) {
     header {
         flex-direction: column;

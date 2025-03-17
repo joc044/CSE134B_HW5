@@ -1,0 +1,23 @@
+[
+    {
+        "title": "Successorator",
+        "image": "assets/Android.jpg",
+        "alt": "Android Logo",
+        "description": "Successorator is an Android app that will function as a TO-DO list for a user.",
+        "link": "https://github.com/CSE-110-Winter-2024/TODO-List"
+    },
+    {
+        "title": "Fortune Teller",
+        "image": "assets/FortuneTeller.png",
+        "alt": "Fortune Teller Page",
+        "description": "Fortune Teller is a digital fortune-telling website which is the companion for your future.",
+        "link": "https://github.com/20-20REENVISIONED/Refactored-fortune-teller"
+    },
+    {
+        "title": "Predicting Diseases",
+        "image": "assets/diseases.jpg",
+        "alt": "Digital Doctor",
+        "description": "This project aims to investigate and identify key factors that contribute to the diagnosis of specific diseases.",
+        "link": "https://github.com/sebastian-dv/CSE-151A-Project"
+    }
+]

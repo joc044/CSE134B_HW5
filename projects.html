@@ -32,6 +32,9 @@
 
     <main>
       <h2>Project Examples</h2>
+      <button id="load-local">Load Local</button>
+      <button id="load-remote">Load Remote</button>
+      <div id="project-list" class="project-container"></div>
       <details>
         <summary>Simple Python Script</summary>
         <p>
@@ -40,27 +43,13 @@
         </p>
       </details>
 
-      <hello-world></hello-world>
-
-      <script>
-        class HelloWorld extends HTMLElement {
-            constructor() {
-                super();
-                console.log("Hello world!");
-            }
-        }
-
-        customElements.define('hello-world', HelloWorld);
-      </script>
-
       <details>
         <summary>Python Function</summary>
         <p>Define a function in Python:</p>
         <pre>
-      def hello():
-          print("Hello, World!")
-          </pre
-        >
+          def hello():
+            print("Hello, World!")
+        </pre>
       </details>
 
       <dialog id="projectDialog">
@@ -131,5 +120,7 @@
       </noscript>
     </footer>
     <script src="assets/scripts/theme.js"></script>
+    <script src="assets/scripts/project-card.js"></script>
+    <script src="assets/scripts/load-projects.js"></script>
   </body>
 </html>
