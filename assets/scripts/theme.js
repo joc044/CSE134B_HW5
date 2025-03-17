@@ -4,7 +4,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const currentTheme = localStorage.getItem("theme") || "light";
     document.documentElement.setAttribute("data-theme", currentTheme);
-
     themeIcon.textContent = currentTheme === "dark" ? "Light" : "Dark";
 
     toggleButton.addEventListener("click", () => {
@@ -13,4 +12,18 @@ document.addEventListener("DOMContentLoaded", () => {
         localStorage.setItem("theme", newTheme);
         themeIcon.textContent = newTheme === "dark" ? "Light" : "Dark";
     });
+
+    const searchForm = document.querySelector("form[role='search']");
+    if (searchForm) {
+        searchForm.addEventListener("submit", (event) => {
+            const queryInput = document.getElementById("query");
+            const searchQuery = queryInput.value.trim();
+
+            if (searchQuery === "") {
+                alert("Please enter a search term before submitting.");
+                queryInput.focus();
+                event.preventDefault();
+            }
+        });
+    }
 });
